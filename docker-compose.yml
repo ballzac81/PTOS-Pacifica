@@ -1,0 +1,20 @@
+# PTOS Signal Tracker — Pacifica (Solana) Edition
+# All settings live in .env — edit that file, not this one.
+
+services:
+  signal-tracker:
+    build: .
+    container_name: PTOS_Pacifica
+    restart: unless-stopped
+    ports:
+      - "5003:5000"
+    env_file:
+      - .env
+    volumes:
+      - /mnt/user/appdata/ptos-pacifica/data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s

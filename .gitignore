@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+data/
+ptos_trades.json
+ptos_htf_bias.json

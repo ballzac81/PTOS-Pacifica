@@ -1,0 +1,8 @@
+flask>=3.0.0,<4.0.0
+flask-limiter>=3.5.0,<4.0.0
+gunicorn>=21.0.0,<24.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0,<3.0.0
+tenacity>=8.2.0,<10.0.0
+solders>=0.21.0
+base58>=2.1.1
